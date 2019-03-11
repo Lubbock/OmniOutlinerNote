@@ -7,9 +7,11 @@ body#wholeDocument {
     -webkit-text-size-adjust:none; 
     font-family: Helvetica, sans-serif; 
     font-size: 12px;
-font-family: "Helvetica Neue", sans-serif; 
+color: rgb(87,110,117);
+    font-family: "Lantinghei SC", sans-serif; 
     font-size: 13px;
     line-height: 1.32;
+    background-color: rgb(250,255,245);
     
 }
 /* height hack to make nested divs set to 100% height work in Chrome and Firefox */
@@ -246,42 +248,42 @@ table.outline-column td:nth-of-type(4), div.column, tr#header div > div > div  {
 }
 
 table.outline-column td:nth-of-type(4), div.column, div.note-icon  {
-    padding-bottom: 5px;
-    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-top: 3px;
 }
 /* When a note is expanded, the row it belongs to doesn't have bottom row padding, that padding goes to the bottom of the note */
 table.note-expanded table.outline-column td:nth-of-type(4), table.note-expanded div.column, table.note-expanded div.note-icon {
-    padding-bottom: 4px;
+    padding-bottom: 0px;
 }
 /* last-child class is set by JS */
 tr.last-child table.outline-column td:nth-of-type(4), tr.last-child div.column, tr.last-child div.note-icon {
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 /* Note text */
 table.note-table td:nth-of-type(4) {
     padding-left: 4px;
     padding-right: 4px;
     margin-top: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 table.note-table {
     margin-top: 0px;
 }
 /* Set above children padding */
 tr[data-state="expanded"][data-has-children="1"] table.outline-column td:nth-of-type(4), tr[data-state="expanded"][data-has-children="1"] div.column {
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 /* When there are children and note is expanded, don't set above children padding on the row, it goes to the note */
 tr[data-state="expanded"][data-has-children="1"].note-expanded table.outline-column td:nth-of-type(4), tr[data-state="expanded"][data-has-children="1"].note-expanded div.column, tr[data-state="expanded"][data-has-children="1"].note-expanded div.note-icon {
-    padding-bottom: 4px;
+    padding-bottom: 0px;
 }
 /* Set above children padding on the note when it is visible */
 tr[data-state="expanded"][data-has-children="1"].note-expanded + tr.note-row table.note-table td:nth-of-type(4) {
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 /* Set last child padding on the note when it is visible, last-child class is set through JS */
 tr.note-row.last-child table.note-table td:nth-of-type(4) {
-    padding-bottom: 5px;
+    padding-bottom: 4px;
 }
 
 
@@ -308,18 +310,18 @@ tr.note-row td.note {
     /* padding-left: 5px;
     padding-right: 3px; */ 
     border: none;
-color: rgb(84,84,84);
+color: rgb(100,123,131);
     font-style: italic;
-    font-size: 11px;
+    font-size: 12px;
     font-style: italic;
-    font-size: 11px;
+    font-size: 12px;
     
 }
 tr.note-row td.note-bg {
 
 }
 table.whole-row, table.whole-note, table#column-header, div.temp-wrapper {
-width: 587px;
+width: 1016px;
 
 }
 /******************
@@ -337,12 +339,12 @@ tr#header td:nth-of-type(1), tr.outline-row > td:nth-of-type(1), tr.note-row > t
     max-width: 20px; 
 }
 table.outline-column { 
-    width: 567px; 
-    max-width: 567px; 
+    width: 996px; 
+    max-width: 996px; 
 }
 tr#header td:nth-of-type(2), tr.outline-row > td:nth-of-type(2) { 
-    width: 567px; 
-    max-width: 567px; 
+    width: 996px; 
+    max-width: 996px; 
     
 }
 
@@ -374,6 +376,7 @@ Level# gutter color – Only applied to nested table for outline column
 ******************/
 /* Level 1 styles */
 tr.outline-row.level-1 td, tr.outline-row.level-1 div > div, tr.note-row.level-1 table.note-table td:nth-of-type(3) { 
+    font-size: 18px;
     
 }
 /* Level 1 background color */
@@ -390,7 +393,136 @@ Named styles info:
 Padding values are not included here because they are additive and can affect a different row than the one that has the attribute
 *********************************************/
 /* Named Styles */
+div#centered tr td .ns-dGxdp2kIDOV-Heading1, .ns-dGxdp2kIDOV-Heading1, div#centered .ns-dGxdp2kIDOV-Heading1 div { 
+    font-family: "Helvetica Neue", sans-serif; 
+    font-weight: 300;
+    font-size: 32px;
+    
+}
+div#centered tr td .ns-l8oM-UgkRJq-Heading2, .ns-l8oM-UgkRJq-Heading2, div#centered .ns-l8oM-UgkRJq-Heading2 div { 
+    font-family: "Helvetica Neue", sans-serif; 
+    font-size: 24px;
+    
+}
+div#centered tr td .ns-hztLM6dQ_J0-Heading3, .ns-hztLM6dQ_J0-Heading3, div#centered .ns-hztLM6dQ_J0-Heading3 div { 
+    font-family: "Helvetica Neue", sans-serif; 
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+div#centered tr td .ns-jCcmkdcQ-PQ-Heading4, .ns-jCcmkdcQ-PQ-Heading4, div#centered .ns-jCcmkdcQ-PQ-Heading4 div { 
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+div#centered tr td .ns-dGMRU3f0g7Y-Heading5, .ns-dGMRU3f0g7Y-Heading5, div#centered .ns-dGMRU3f0g7Y-Heading5 div { 
+    font-weight: 700;
+    font-size: 13px;
+    
+}
+div#centered tr td .ns-a2InX3pJ77O-Heading6, .ns-a2InX3pJ77O-Heading6, div#centered .ns-a2InX3pJ77O-Heading6 div { 
+    font-weight: 700;
+    font-size: 11px;
+    
+}
+div#centered tr td .ns-mkE6Cq8Hnsp-Highlight1, .ns-mkE6Cq8Hnsp-Highlight1, div#centered .ns-mkE6Cq8Hnsp-Highlight1 div { 
+    color: rgb(203,75,21);
+    
+}
+div#centered tr td .ns-eiFygdH5llS-Highlight2, .ns-eiFygdH5llS-Highlight2, div#centered .ns-eiFygdH5llS-Highlight2 div { 
+    color: rgb(38,138,209);
+    
+}
+div#centered tr td .ns-j20bMJSiJ86-Highlight3, .ns-j20bMJSiJ86-Highlight3, div#centered .ns-j20bMJSiJ86-Highlight3 div { 
+    color: rgb(238,232,212);
+    
+}
+div#centered tr td .ns-nU7Pax9sHwm-, .ns-nU7Pax9sHwm-, div#centered .ns-nU7Pax9sHwm- div { 
+    
+}
+div#centered tr td .ns-m6c_M2fT6yP-, .ns-m6c_M2fT6yP-, div#centered .ns-m6c_M2fT6yP- div { 
+    
+}
+div#centered tr td .ns-auoqZ5xVKeG-, .ns-auoqZ5xVKeG-, div#centered .ns-auoqZ5xVKeG- div { 
+    
+}
 
 /* Named Styles Backgroud Colors */
+div#centered tr td .ns-bg-dGxdp2kIDOV-Heading1, .ns-bg-dGxdp2kIDOV-Heading1 { 
+    
+}
+div#centered tr td .ns-bg-l8oM-UgkRJq-Heading2, .ns-bg-l8oM-UgkRJq-Heading2 { 
+    
+}
+div#centered tr td .ns-bg-hztLM6dQ_J0-Heading3, .ns-bg-hztLM6dQ_J0-Heading3 { 
+    
+}
+div#centered tr td .ns-bg-jCcmkdcQ-PQ-Heading4, .ns-bg-jCcmkdcQ-PQ-Heading4 { 
+    
+}
+div#centered tr td .ns-bg-dGMRU3f0g7Y-Heading5, .ns-bg-dGMRU3f0g7Y-Heading5 { 
+    
+}
+div#centered tr td .ns-bg-a2InX3pJ77O-Heading6, .ns-bg-a2InX3pJ77O-Heading6 { 
+    
+}
+div#centered tr td .ns-bg-mkE6Cq8Hnsp-Highlight1, .ns-bg-mkE6Cq8Hnsp-Highlight1 { 
+    
+}
+div#centered tr td .ns-bg-eiFygdH5llS-Highlight2, .ns-bg-eiFygdH5llS-Highlight2 { 
+    
+}
+div#centered tr td .ns-bg-j20bMJSiJ86-Highlight3, .ns-bg-j20bMJSiJ86-Highlight3 { 
+    background-color: rgb(147,160,161);
+    
+}
+div#centered tr td .ns-bg-nU7Pax9sHwm-, .ns-bg-nU7Pax9sHwm- { 
+    background-color: rgba(255,197,0,0.25);
+    
+}
+div#centered tr td .ns-bg-m6c_M2fT6yP-, .ns-bg-m6c_M2fT6yP- { 
+    background-color: rgba(246,120,137,0.25);
+    
+}
+div#centered tr td .ns-bg-auoqZ5xVKeG-, .ns-bg-auoqZ5xVKeG- { 
+    background-color: rgba(120,195,68,0.25);
+    
+}
 
 /* Named Styles Gutter Colors */
+div#centered tr td .ns-gutter-dGxdp2kIDOV-Heading1, .ns-gutter-dGxdp2kIDOV-Heading1 { 
+    
+}
+div#centered tr td .ns-gutter-l8oM-UgkRJq-Heading2, .ns-gutter-l8oM-UgkRJq-Heading2 { 
+    
+}
+div#centered tr td .ns-gutter-hztLM6dQ_J0-Heading3, .ns-gutter-hztLM6dQ_J0-Heading3 { 
+    
+}
+div#centered tr td .ns-gutter-jCcmkdcQ-PQ-Heading4, .ns-gutter-jCcmkdcQ-PQ-Heading4 { 
+    
+}
+div#centered tr td .ns-gutter-dGMRU3f0g7Y-Heading5, .ns-gutter-dGMRU3f0g7Y-Heading5 { 
+    
+}
+div#centered tr td .ns-gutter-a2InX3pJ77O-Heading6, .ns-gutter-a2InX3pJ77O-Heading6 { 
+    
+}
+div#centered tr td .ns-gutter-mkE6Cq8Hnsp-Highlight1, .ns-gutter-mkE6Cq8Hnsp-Highlight1 { 
+    
+}
+div#centered tr td .ns-gutter-eiFygdH5llS-Highlight2, .ns-gutter-eiFygdH5llS-Highlight2 { 
+    
+}
+div#centered tr td .ns-gutter-j20bMJSiJ86-Highlight3, .ns-gutter-j20bMJSiJ86-Highlight3 { 
+    
+}
+div#centered tr td .ns-gutter-nU7Pax9sHwm-, .ns-gutter-nU7Pax9sHwm- { 
+    
+}
+div#centered tr td .ns-gutter-m6c_M2fT6yP-, .ns-gutter-m6c_M2fT6yP- { 
+    
+}
+div#centered tr td .ns-gutter-auoqZ5xVKeG-, .ns-gutter-auoqZ5xVKeG- { 
+    
+}
